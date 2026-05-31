@@ -43,7 +43,7 @@ def init_db():
             value TEXT
         )
     """)
-    cursor.execute("INSERT OR IGNORE INTO settings (key, value) VALUES ('insta_link', 'https://www.instagram.com/xamzayevich.o7?utm_source=qr')")
+    cursor.execute("INSERT OR REPLACE INTO settings (key, value) VALUES ('insta_link', 'https://www.instagram.com/xamzayevich.o7?utm_source=qr')")
     conn.commit()
     conn.close()
 
